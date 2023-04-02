@@ -1,0 +1,15 @@
+C:\Users\fahre\hello\bin\Debug\net7.0\hello.exe
+C:\Users\fahre\hello\bin\Debug\net7.0\hello.deps.json
+C:\Users\fahre\hello\bin\Debug\net7.0\hello.runtimeconfig.json
+C:\Users\fahre\hello\bin\Debug\net7.0\hello.dll
+C:\Users\fahre\hello\bin\Debug\net7.0\hello.pdb
+C:\Users\fahre\hello\obj\Debug\net7.0\hello.csproj.AssemblyReference.cache
+C:\Users\fahre\hello\obj\Debug\net7.0\hello.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fahre\hello\obj\Debug\net7.0\hello.AssemblyInfoInputs.cache
+C:\Users\fahre\hello\obj\Debug\net7.0\hello.AssemblyInfo.cs
+C:\Users\fahre\hello\obj\Debug\net7.0\hello.csproj.CoreCompileInputs.cache
+C:\Users\fahre\hello\obj\Debug\net7.0\hello.dll
+C:\Users\fahre\hello\obj\Debug\net7.0\refint\hello.dll
+C:\Users\fahre\hello\obj\Debug\net7.0\hello.pdb
+C:\Users\fahre\hello\obj\Debug\net7.0\hello.genruntimeconfig.cache
+C:\Users\fahre\hello\obj\Debug\net7.0\ref\hello.dll

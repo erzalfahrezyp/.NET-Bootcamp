@@ -1,0 +1,15 @@
+C:\Users\fahre\hello\lambda\bin\Debug\net7.0\lambda.exe
+C:\Users\fahre\hello\lambda\bin\Debug\net7.0\lambda.deps.json
+C:\Users\fahre\hello\lambda\bin\Debug\net7.0\lambda.runtimeconfig.json
+C:\Users\fahre\hello\lambda\bin\Debug\net7.0\lambda.dll
+C:\Users\fahre\hello\lambda\bin\Debug\net7.0\lambda.pdb
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\lambda.csproj.AssemblyReference.cache
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\lambda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\lambda.AssemblyInfoInputs.cache
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\lambda.AssemblyInfo.cs
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\lambda.csproj.CoreCompileInputs.cache
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\lambda.dll
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\refint\lambda.dll
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\lambda.pdb
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\lambda.genruntimeconfig.cache
+C:\Users\fahre\hello\lambda\obj\Debug\net7.0\ref\lambda.dll

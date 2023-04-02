@@ -1,0 +1,15 @@
+C:\Users\fahre\hello\threadapp\bin\Debug\net7.0\threadapp.exe
+C:\Users\fahre\hello\threadapp\bin\Debug\net7.0\threadapp.deps.json
+C:\Users\fahre\hello\threadapp\bin\Debug\net7.0\threadapp.runtimeconfig.json
+C:\Users\fahre\hello\threadapp\bin\Debug\net7.0\threadapp.dll
+C:\Users\fahre\hello\threadapp\bin\Debug\net7.0\threadapp.pdb
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\threadapp.csproj.AssemblyReference.cache
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\threadapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\threadapp.AssemblyInfoInputs.cache
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\threadapp.AssemblyInfo.cs
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\threadapp.csproj.CoreCompileInputs.cache
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\threadapp.dll
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\refint\threadapp.dll
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\threadapp.pdb
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\threadapp.genruntimeconfig.cache
+C:\Users\fahre\hello\threadapp\obj\Debug\net7.0\ref\threadapp.dll

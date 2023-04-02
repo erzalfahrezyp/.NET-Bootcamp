@@ -1,0 +1,15 @@
+C:\Users\fahre\hello\async\bin\Debug\net7.0\async.exe
+C:\Users\fahre\hello\async\bin\Debug\net7.0\async.deps.json
+C:\Users\fahre\hello\async\bin\Debug\net7.0\async.runtimeconfig.json
+C:\Users\fahre\hello\async\bin\Debug\net7.0\async.dll
+C:\Users\fahre\hello\async\bin\Debug\net7.0\async.pdb
+C:\Users\fahre\hello\async\obj\Debug\net7.0\async.csproj.AssemblyReference.cache
+C:\Users\fahre\hello\async\obj\Debug\net7.0\async.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fahre\hello\async\obj\Debug\net7.0\async.AssemblyInfoInputs.cache
+C:\Users\fahre\hello\async\obj\Debug\net7.0\async.AssemblyInfo.cs
+C:\Users\fahre\hello\async\obj\Debug\net7.0\async.csproj.CoreCompileInputs.cache
+C:\Users\fahre\hello\async\obj\Debug\net7.0\async.dll
+C:\Users\fahre\hello\async\obj\Debug\net7.0\refint\async.dll
+C:\Users\fahre\hello\async\obj\Debug\net7.0\async.pdb
+C:\Users\fahre\hello\async\obj\Debug\net7.0\async.genruntimeconfig.cache
+C:\Users\fahre\hello\async\obj\Debug\net7.0\ref\async.dll

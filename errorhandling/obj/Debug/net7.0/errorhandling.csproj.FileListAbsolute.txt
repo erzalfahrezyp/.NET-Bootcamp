@@ -1,0 +1,15 @@
+C:\Users\fahre\hello\errorhandling\bin\Debug\net7.0\errorhandling.exe
+C:\Users\fahre\hello\errorhandling\bin\Debug\net7.0\errorhandling.deps.json
+C:\Users\fahre\hello\errorhandling\bin\Debug\net7.0\errorhandling.runtimeconfig.json
+C:\Users\fahre\hello\errorhandling\bin\Debug\net7.0\errorhandling.dll
+C:\Users\fahre\hello\errorhandling\bin\Debug\net7.0\errorhandling.pdb
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\errorhandling.csproj.AssemblyReference.cache
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\errorhandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\errorhandling.AssemblyInfoInputs.cache
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\errorhandling.AssemblyInfo.cs
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\errorhandling.csproj.CoreCompileInputs.cache
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\errorhandling.dll
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\refint\errorhandling.dll
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\errorhandling.pdb
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\errorhandling.genruntimeconfig.cache
+C:\Users\fahre\hello\errorhandling\obj\Debug\net7.0\ref\errorhandling.dll
