@@ -11,7 +11,6 @@ namespace ShoppingCart.GraphQL
         {
             return context.Products.Where(p => !p.Deleted);
         }
-        [Authorize(Roles = new[] {"Admin"})]
         public Product GetProductById([Service] ShoppingCartContext context, int id)
         {
             var product = context.Products.FirstOrDefault(p => p.Id == id);

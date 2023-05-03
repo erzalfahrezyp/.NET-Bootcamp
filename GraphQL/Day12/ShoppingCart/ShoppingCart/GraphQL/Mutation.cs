@@ -6,6 +6,7 @@ using System.Text;
 using ShoppingCart.Models;
 
 using BC = BCrypt.Net.BCrypt;
+using HotChocolate.Authorization;
 
 namespace ShoppingCart.GraphQL
 {
@@ -173,6 +174,8 @@ namespace ShoppingCart.GraphQL
         {
             _context = context;
         }
+
+        [Authorize(Roles = new[] {"Admin"})]
         public Product CreateProduct(string name, double price, int stock)
         {
             Product newItem = new Product();
@@ -187,6 +190,7 @@ namespace ShoppingCart.GraphQL
             return newItem;
         }
 
+        [Authorize(Roles = new[] { "Admin" })]
         public Product UpdateProduct(int id, string? name, double? price, int? stock )
         {
             var product = _context.Products.FirstOrDefault(o => o.Id == id);
@@ -201,6 +205,7 @@ namespace ShoppingCart.GraphQL
             return product;
         }
 
+        [Authorize(Roles = new[] { "Admin" })]
         public Product DeleteProduct(int id)
         {
             var product = _context.Products.FirstOrDefault(o => o.Id == id);
