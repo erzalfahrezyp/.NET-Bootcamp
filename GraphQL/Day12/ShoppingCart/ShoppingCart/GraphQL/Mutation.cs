@@ -50,20 +50,78 @@ namespace ShoppingCart.GraphQL
             }
             return "gagal";
         }
+        //public UserToken Login([Service] ShoppingCartContext context, [Service] IConfiguration configuration, UserLogin userLogin)
+        //{
+        //    //linq
+        //    var usr = context.Users
+        //        .Where(o => o.Username == userLogin.Username).FirstOrDefault();
+        //    if (usr != null)
+        //    {
+        //        if (BC.Verify(userLogin.Password, usr.Password))
+        //        {
+        //            var roles = from ur in context.UserRoles
+        //                        join r in context.Roles
+        //                        on ur.RoleId equals r.Id
+        //                        where ur.UserId == usr.Id
+        //                        select r.Name;
+        //            var roleClaims = new Dictionary<string, object>();
+        //            foreach (var role in roles)
+        //            {
+        //                roleClaims.Add(ClaimTypes.Role, "" + role);
+        //            }
+
+        //            var secret = configuration.GetValue<string>("AppSettings:Secret");
+        //            var secretBytes = Encoding.ASCII.GetBytes(secret);
+
+        //            //token
+        //            var expired = DateTime.Now.AddDays(2); //2 hari
+        //            var tokenHandler = new JwtSecurityTokenHandler();
+        //            //data
+        //            var tokenDescriptor = new SecurityTokenDescriptor
+        //            {
+        //                //payload
+        //                Subject = new System.Security.Claims.ClaimsIdentity(
+        //                    new Claim[]
+        //                    {
+        //                        new Claim(ClaimTypes.Name, userLogin.Username),
+        //                    }),
+        //                Expires = expired,
+        //                SigningCredentials = new SigningCredentials(
+        //                    new SymmetricSecurityKey(secretBytes),
+        //                    SecurityAlgorithms.HmacSha256Signature
+        //                    )
+        //            };
+        //            var token = tokenHandler.CreateToken(tokenDescriptor);
+        //            var userToken = new UserToken
+        //            {
+        //                Token = tokenHandler.WriteToken(token),
+        //                ExpiredAt = expired.ToString(),
+        //                Message = ""
+        //            };
+        //            return userToken;
+        //        }
+        //    }
+        //    return new UserToken { Message = "Invalid username or password" };
+        //}
+
         public UserToken Login([Service] ShoppingCartContext context, [Service] IConfiguration configuration, UserLogin userLogin)
         {
-            //linq
-            var usr = context.Users
-                .Where(o => o.Username == userLogin.Username).FirstOrDefault();
+            // linq
+            var usr = context.Users.Where(o => o.Username == userLogin.Username).FirstOrDefault();
             if (usr != null)
             {
                 if (BC.Verify(userLogin.Password, usr.Password))
                 {
+                    // login sukses
+                    // ambil role
+                    //var userroles = _context.UserRoles.Where(o => o.UserId == usr.Id).ToList();                       
+                    // joins
                     var roles = from ur in context.UserRoles
                                 join r in context.Roles
                                 on ur.RoleId equals r.Id
                                 where ur.UserId == usr.Id
                                 select r.Name;
+
                     var roleClaims = new Dictionary<string, object>();
                     foreach (var role in roles)
                     {
@@ -73,32 +131,34 @@ namespace ShoppingCart.GraphQL
                     var secret = configuration.GetValue<string>("AppSettings:Secret");
                     var secretBytes = Encoding.ASCII.GetBytes(secret);
 
-                    //token
-                    var expired = DateTime.Now.AddDays(2); //2 hari
+                    // token
+                    var expired = DateTime.Now.AddDays(2); // 2 hari
                     var tokenHandler = new JwtSecurityTokenHandler();
-                    //data
+                    // data
                     var tokenDescriptor = new SecurityTokenDescriptor
                     {
-                        //payload
+                        // payload
                         Subject = new System.Security.Claims.ClaimsIdentity(
                             new Claim[]
                             {
-                                new Claim(ClaimTypes.Name, userLogin.Username),
+                                new Claim(ClaimTypes.Name, userLogin.Username)
                             }),
+                        Claims = roleClaims, // claims - roles
                         Expires = expired,
                         SigningCredentials = new SigningCredentials(
                             new SymmetricSecurityKey(secretBytes),
-                            SecurityAlgorithms.HmacSha256Signature
-                            )
+                            SecurityAlgorithms.HmacSha256Signature)
                     };
                     var token = tokenHandler.CreateToken(tokenDescriptor);
                     var userToken = new UserToken
                     {
                         Token = tokenHandler.WriteToken(token),
                         ExpiredAt = expired.ToString(),
-                        Message = ""
+                        Message = "succes login"
                     };
+
                     return userToken;
+
                 }
             }
             return new UserToken { Message = "Invalid username or password" };

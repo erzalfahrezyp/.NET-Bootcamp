@@ -1,4 +1,5 @@
-﻿using ShoppingCart.Models;
+﻿using HotChocolate.Authorization;
+using ShoppingCart.Models;
 
 namespace ShoppingCart.GraphQL
 {
@@ -10,6 +11,7 @@ namespace ShoppingCart.GraphQL
         {
             return context.Products.Where(p => !p.Deleted);
         }
+        [Authorize(Roles = new[] {"Admin"})]
         public Product GetProductById([Service] ShoppingCartContext context, int id)
         {
             var product = context.Products.FirstOrDefault(p => p.Id == id);
