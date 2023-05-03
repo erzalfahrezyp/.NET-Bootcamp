@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TI/7Tf1J90ePH2HWsCDXeiOaY4cX3PwQBbEyXxLcblsXXNujFEpgbz4U9jXmE2ufXCOD0Mqc72qmfHBpimiDBQ==",
+  "dgSpecHash": "kcRDXnMKGRzKomwiYES99rlDODjYsrfBjrQZFsPFbhJs0AnCJb/y33wRTR0IBSkWXfiD0qvUIqYPpr7H/d5JYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fahre\\hello\\GraphQL\\Day12\\GraphQLSecurity\\GraphQLSecurity.csproj",
+  "projectFilePath": "C:\\Users\\fahre\\hello\\Materi\\GraphQL\\Day12\\GraphQLSecurity\\GraphQLSecurity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fahre\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\fahre\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

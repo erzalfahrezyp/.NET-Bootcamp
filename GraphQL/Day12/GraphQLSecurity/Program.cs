@@ -1,9 +1,51 @@
+using GraphQLSecurity.GraphQL;
+using GraphQLSecurity.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// db
+var cnstr = builder.Configuration.GetConnectionString("MyDB");
+builder.Services.AddDbContext<WebApiMvcContext>(option => option.UseSqlServer(cnstr));
+
+// jwt
+var secret = builder.Configuration["AppSettings:Secret"];
+var secretBytes = Encoding.ASCII.GetBytes(secret);
+builder.Services.AddAuthentication(o =>
+{
+    o.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    o.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddJwtBearer(o =>
+    {
+        o.RequireHttpsMetadata = false;
+        o.SaveToken = true;
+        o.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+        {
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(secretBytes)
+        };
+    });
+// policy
+var policy = new Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder(
+    JwtBearerDefaults.AuthenticationScheme).RequireAuthenticatedUser().Build();
+builder.Services.AddAuthorization(o => o.DefaultPolicy = policy);
+
+// active graphql
+builder.Services.AddGraphQLServer()
+    .AddQueryType<Query>()
+    .AddMutationType<Mutation>()
+    .AddAuthorization(); // activate an authorization on graphQL
 
 var app = builder.Build();
 
@@ -35,6 +77,9 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
+
+// activate endpouint of graphql
+app.MapGraphQL(); // http://<server>/graphql
 
 app.Run();
 
