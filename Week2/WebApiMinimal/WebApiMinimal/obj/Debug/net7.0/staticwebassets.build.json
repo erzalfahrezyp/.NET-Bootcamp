@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "YxZOnzMgDXmmqhNu1jDdwYqYxIisHqCA5j5k0xpQNuA=",
+  "Source": "WebApiMinimal",
+  "BasePath": "_content/WebApiMinimal",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApiMinimal\\wwwroot",
+      "Source": "WebApiMinimal",
+      "ContentRoot": "C:\\Users\\fahre\\hello\\Week2\\WebApiMinimal\\WebApiMinimal\\wwwroot\\",
+      "BasePath": "_content/WebApiMinimal",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

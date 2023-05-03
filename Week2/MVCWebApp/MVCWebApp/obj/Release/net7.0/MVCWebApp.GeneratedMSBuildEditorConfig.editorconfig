@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVCWebApp
+build_property.RootNamespace = MVCWebApp
+build_property.ProjectDir = C:\Users\fahre\hello\Week2\MVCWebApp\MVCWebApp\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\fahre\hello\Week2\MVCWebApp\MVCWebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/FormPendaftaran/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBlbmRhZnRhcmFuXFJlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/FormPendaftaran/RegistrationDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVBlbmRhZnRhcmFuXFJlZ2lzdHJhdGlvbkRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Training/Hello.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdcSGVsbG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Training/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Training/MyRegistration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdcTXlSZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Training/MyTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdcTXlUZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Training/Pegawai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdcUGVnYXdhaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Training/RegistrationData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdcUmVnaXN0cmF0aW9uRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Training/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdcVGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahre/hello/Week2/MVCWebApp/MVCWebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lsojt0q0f9

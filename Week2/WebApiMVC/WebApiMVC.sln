@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiMVC", "WebApiMVC\WebApiMVC.csproj", "{B58086ED-431A-42EF-933D-460251727B2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqApp", "ReviewApp\LinqApp.csproj", "{BAAB76CE-B9B5-4829-987C-E4E1FAC8ECAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDBApp", "WebDBApp\WebDBApp.csproj", "{CAD32CE0-8069-45B9-976E-F632B5AE4EEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDbAppMinimal", "WebDbAppMinimal\WebDbAppMinimal.csproj", "{D652A084-ED78-448F-8FA7-676D35A57FB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDBApi", "WebDBApi\WebDBApi.csproj", "{726E9B17-710D-471F-BFD6-8AAA5C345FA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDbAppCrudMVC", "WebDbAppCrudMVC\WebDbAppCrudMVC.csproj", "{7CA76802-F0FC-4147-BAF3-37CA34A787F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B58086ED-431A-42EF-933D-460251727B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58086ED-431A-42EF-933D-460251727B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58086ED-431A-42EF-933D-460251727B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58086ED-431A-42EF-933D-460251727B2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAAB76CE-B9B5-4829-987C-E4E1FAC8ECAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAB76CE-B9B5-4829-987C-E4E1FAC8ECAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAB76CE-B9B5-4829-987C-E4E1FAC8ECAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAB76CE-B9B5-4829-987C-E4E1FAC8ECAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD32CE0-8069-45B9-976E-F632B5AE4EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD32CE0-8069-45B9-976E-F632B5AE4EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD32CE0-8069-45B9-976E-F632B5AE4EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD32CE0-8069-45B9-976E-F632B5AE4EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D652A084-ED78-448F-8FA7-676D35A57FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D652A084-ED78-448F-8FA7-676D35A57FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D652A084-ED78-448F-8FA7-676D35A57FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D652A084-ED78-448F-8FA7-676D35A57FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726E9B17-710D-471F-BFD6-8AAA5C345FA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726E9B17-710D-471F-BFD6-8AAA5C345FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726E9B17-710D-471F-BFD6-8AAA5C345FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726E9B17-710D-471F-BFD6-8AAA5C345FA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CA76802-F0FC-4147-BAF3-37CA34A787F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA76802-F0FC-4147-BAF3-37CA34A787F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA76802-F0FC-4147-BAF3-37CA34A787F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA76802-F0FC-4147-BAF3-37CA34A787F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {893C5F5B-1C71-4DEC-8D1A-0E8F9ADC2E91}
+	EndGlobalSection
+EndGlobal

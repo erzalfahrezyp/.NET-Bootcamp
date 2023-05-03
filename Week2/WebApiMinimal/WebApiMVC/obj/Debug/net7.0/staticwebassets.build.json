@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "LZkvI0bfBSm1uT7peLXnQxseZy4gPt+imwOVKmTHjYo=",
+  "Source": "WebApiMVC",
+  "BasePath": "_content/WebApiMVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApiMVC\\wwwroot",
+      "Source": "WebApiMVC",
+      "ContentRoot": "C:\\Users\\fahre\\hello\\Week2\\WebApiMinimal\\WebApiMVC\\wwwroot\\",
+      "BasePath": "_content/WebApiMVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\fahre\\hello\\Week2\\WebApiMinimal\\WebApiMVC\\wwwroot\\upload\\calculator_46872.png",
+      "SourceId": "WebApiMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fahre\\hello\\Week2\\WebApiMinimal\\WebApiMVC\\wwwroot\\",
+      "BasePath": "_content/WebApiMVC",
+      "RelativePath": "upload/calculator_46872.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\upload\\calculator_46872.png"
+    }
+  ]
+}

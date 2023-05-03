@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Kalkulator";
+}
+
+<div class="container">
+    <h1>Kalkulator Pelunas Utang</h1>
+    <hr />
+    <form method="post">
+        <div class="form-group">
+            <h6>Bilangan pertama:</h6>
+            <input type="text" class="form-control" id="bilangan1" name="bilangan1" placeholder="Input disini..." value="@ViewBag.Bil1" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <h6>Bilangan kedua:</h6>
+            <input type="text" class="form-control" id="bilangan2" name="bilangan2" placeholder="Disini juga..." value="@ViewBag.Bil2" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <h4>Operasi hitung:</h4>
+            <button type="submit" class="btn btn-primary" name="operasi" value="+">Tambah (+)</button>
+            <button type="submit" class="btn btn-primary" name="operasi" value="-">Kurang (-)</button>
+            <button type="submit" class="btn btn-primary" name="operasi" value="*">Kali (*)</button>
+            <button type="submit" class="btn btn-primary" name="operasi" value="/">Bagi (/)</button>
+        </div>
+    </form>
+    <br>
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger">
+            <h4>Error!</h4>
+        </div>
+    }
+
+    @if (ViewBag.Hasil != null)
+    {
+        <div class="alert alert-success">
+            <h4>Hasilnya:</h4>
+            <p>@ViewBag.Bil1 @ViewBag.Operasi @ViewBag.Bil2 = @ViewBag.Hasil</p>
+        </div>
+    }
+</div>
+

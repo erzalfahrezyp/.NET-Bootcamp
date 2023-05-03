@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\fahre\\hello\\Week2\\WebApiMinimal\\WebApiMVC\\wwwroot\\upload\\calculator_46872.png",
+      "PackagePath": "staticwebassets\\upload\\calculator_46872.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebApiMVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebApiMVC.props",
+      "PackagePath": "build\\WebApiMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApiMVC.props",
+      "PackagePath": "buildMultiTargeting\\WebApiMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebApiMVC.props",
+      "PackagePath": "buildTransitive\\WebApiMVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

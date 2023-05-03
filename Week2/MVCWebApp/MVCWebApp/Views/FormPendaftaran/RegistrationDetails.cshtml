@@ -1,0 +1,72 @@
+﻿@model MVCWebApp.Models.DataForm
+
+@{
+    ViewData["Title"] = "RegistrationDetails";
+}
+
+<h1>Registration Data</h1>
+
+<div>
+    <h4>Data Diri Pelserta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nama)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nama)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <dt class = "col-sm-2">
+            Password
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Passwordd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Alamat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Alamat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JenisKelamin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JenisKelamin)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pekerjaan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pekerjaan)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TanggalMulai)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TanggalMulai)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Penempatan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Penempatan)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

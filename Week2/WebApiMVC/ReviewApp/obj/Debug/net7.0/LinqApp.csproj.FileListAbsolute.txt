@@ -1,0 +1,15 @@
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\LinqApp.csproj.AssemblyReference.cache
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\LinqApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\LinqApp.AssemblyInfoInputs.cache
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\LinqApp.AssemblyInfo.cs
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\LinqApp.csproj.CoreCompileInputs.cache
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\bin\Debug\net7.0\LinqApp.exe
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\bin\Debug\net7.0\LinqApp.deps.json
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\bin\Debug\net7.0\LinqApp.runtimeconfig.json
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\bin\Debug\net7.0\LinqApp.dll
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\bin\Debug\net7.0\LinqApp.pdb
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\LinqApp.dll
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\refint\LinqApp.dll
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\LinqApp.pdb
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\LinqApp.genruntimeconfig.cache
+C:\Users\fahre\hello\Week2\WebApiMVC\ReviewApp\obj\Debug\net7.0\ref\LinqApp.dll
