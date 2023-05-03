@@ -50,5 +50,107 @@ namespace ShoppingCart.GraphQL
             }
             return "gagal";
         }
+        public UserToken Login([Service] ShoppingCartContext context, [Service] IConfiguration configuration, UserLogin userLogin)
+        {
+            //linq
+            var usr = context.Users
+                .Where(o => o.Username == userLogin.Username).FirstOrDefault();
+            if (usr != null)
+            {
+                if (BC.Verify(userLogin.Password, usr.Password))
+                {
+                    var roles = from ur in context.UserRoles
+                                join r in context.Roles
+                                on ur.RoleId equals r.Id
+                                where ur.UserId == usr.Id
+                                select r.Name;
+                    var roleClaims = new Dictionary<string, object>();
+                    foreach (var role in roles)
+                    {
+                        roleClaims.Add(ClaimTypes.Role, "" + role);
+                    }
+
+                    var secret = configuration.GetValue<string>("AppSettings:Secret");
+                    var secretBytes = Encoding.ASCII.GetBytes(secret);
+
+                    //token
+                    var expired = DateTime.Now.AddDays(2); //2 hari
+                    var tokenHandler = new JwtSecurityTokenHandler();
+                    //data
+                    var tokenDescriptor = new SecurityTokenDescriptor
+                    {
+                        //payload
+                        Subject = new System.Security.Claims.ClaimsIdentity(
+                            new Claim[]
+                            {
+                                new Claim(ClaimTypes.Name, userLogin.Username),
+                            }),
+                        Expires = expired,
+                        SigningCredentials = new SigningCredentials(
+                            new SymmetricSecurityKey(secretBytes),
+                            SecurityAlgorithms.HmacSha256Signature
+                            )
+                    };
+                    var token = tokenHandler.CreateToken(tokenDescriptor);
+                    var userToken = new UserToken
+                    {
+                        Token = tokenHandler.WriteToken(token),
+                        ExpiredAt = expired.ToString(),
+                        Message = ""
+                    };
+                    return userToken;
+                }
+            }
+            return new UserToken { Message = "Invalid username or password" };
+        }
+
+
+
+
+        // CRUD PRODUCT
+        private readonly ShoppingCartContext _context;
+        public Mutation(ShoppingCartContext context)
+        {
+            _context = context;
+        }
+        public Product CreateProduct(string name, double price, int stock)
+        {
+            Product newItem = new Product();
+            newItem.Name = name;
+            if (newItem.Name != null)
+            {
+                newItem.Price = price;
+                newItem.Stock = stock;
+            }
+            _context.Products.Add(newItem);
+            _context.SaveChanges();
+            return newItem;
+        }
+
+        public Product UpdateProduct(int id, string? name, double? price, int? stock )
+        {
+            var product = _context.Products.FirstOrDefault(o => o.Id == id);
+            if (product != null)
+            {
+                product.Name = name ?? product.Name;
+                product.Price = price ?? product.Price;
+                product.Stock = stock ?? product.Stock;
+            }
+            _context.Products.Update(product);
+            _context.SaveChanges();
+            return product;
+        }
+
+        public Product DeleteProduct(int id)
+        {
+            var product = _context.Products.FirstOrDefault(o => o.Id == id);
+            if (product != null)
+            {
+                product.Deleted = true;
+                _context.Products.Update(product);
+                _context.SaveChanges();
+            }
+            return product;
+        }
     }
 }

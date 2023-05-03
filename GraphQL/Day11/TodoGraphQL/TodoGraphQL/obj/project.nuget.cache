@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ilC30IW76oB9IEWldCQNlHCIx2sPi7jWFEgMqnMgi82jefrdxi2yqdCpLcOkE7rhi0eWmKTTGGkgVDz4kccuhw==",
+  "dgSpecHash": "939yg8Q3Ie9oBpyi0lw8Ve99OMuUL/vcnAGsUe5bGe/lgoknt/2EO7oTj4Y32nPq+1eU3faNngFZpawXhKa4oQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fahre\\hello\\GraphQL\\Day1\\Day11\\TodoGraphQL\\TodoGraphQL\\TodoGraphQL.csproj",
+  "projectFilePath": "C:\\Users\\fahre\\hello\\Materi\\GraphQL\\Day11\\TodoGraphQL\\TodoGraphQL\\TodoGraphQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fahre\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\fahre\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
