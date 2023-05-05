@@ -7,6 +7,7 @@ using ShoppingCart.Models;
 
 using BC = BCrypt.Net.BCrypt;
 using HotChocolate.Authorization;
+using Microsoft.AspNetCore.Server.IIS.Core;
 
 namespace ShoppingCart.GraphQL
 {
@@ -40,7 +41,7 @@ namespace ShoppingCart.GraphQL
                         // simpan dan commit
                         context.SaveChanges();
                         trans.Commit(); // commit
-                        return "Sukses";
+                        return "Success";
                     }
                     //return "Sukses";
                 }
@@ -51,60 +52,6 @@ namespace ShoppingCart.GraphQL
             }
             return "gagal";
         }
-        //public UserToken Login([Service] ShoppingCartContext context, [Service] IConfiguration configuration, UserLogin userLogin)
-        //{
-        //    //linq
-        //    var usr = context.Users
-        //        .Where(o => o.Username == userLogin.Username).FirstOrDefault();
-        //    if (usr != null)
-        //    {
-        //        if (BC.Verify(userLogin.Password, usr.Password))
-        //        {
-        //            var roles = from ur in context.UserRoles
-        //                        join r in context.Roles
-        //                        on ur.RoleId equals r.Id
-        //                        where ur.UserId == usr.Id
-        //                        select r.Name;
-        //            var roleClaims = new Dictionary<string, object>();
-        //            foreach (var role in roles)
-        //            {
-        //                roleClaims.Add(ClaimTypes.Role, "" + role);
-        //            }
-
-        //            var secret = configuration.GetValue<string>("AppSettings:Secret");
-        //            var secretBytes = Encoding.ASCII.GetBytes(secret);
-
-        //            //token
-        //            var expired = DateTime.Now.AddDays(2); //2 hari
-        //            var tokenHandler = new JwtSecurityTokenHandler();
-        //            //data
-        //            var tokenDescriptor = new SecurityTokenDescriptor
-        //            {
-        //                //payload
-        //                Subject = new System.Security.Claims.ClaimsIdentity(
-        //                    new Claim[]
-        //                    {
-        //                        new Claim(ClaimTypes.Name, userLogin.Username),
-        //                    }),
-        //                Expires = expired,
-        //                SigningCredentials = new SigningCredentials(
-        //                    new SymmetricSecurityKey(secretBytes),
-        //                    SecurityAlgorithms.HmacSha256Signature
-        //                    )
-        //            };
-        //            var token = tokenHandler.CreateToken(tokenDescriptor);
-        //            var userToken = new UserToken
-        //            {
-        //                Token = tokenHandler.WriteToken(token),
-        //                ExpiredAt = expired.ToString(),
-        //                Message = ""
-        //            };
-        //            return userToken;
-        //        }
-        //    }
-        //    return new UserToken { Message = "Invalid username or password" };
-        //}
-
         public UserToken Login([Service] ShoppingCartContext context, [Service] IConfiguration configuration, UserLogin userLogin)
         {
             // linq
@@ -155,7 +102,7 @@ namespace ShoppingCart.GraphQL
                     {
                         Token = tokenHandler.WriteToken(token),
                         ExpiredAt = expired.ToString(),
-                        Message = "succes login"
+                        Message = "Login success"
                     };
 
                     return userToken;
@@ -175,7 +122,7 @@ namespace ShoppingCart.GraphQL
             _context = context;
         }
 
-        [Authorize(Roles = new[] {"Admin"})]
+        //[Authorize(Roles = new[] { "Admin" })]
         public Product CreateProduct(string name, double price, int stock)
         {
             Product newItem = new Product();
@@ -184,15 +131,29 @@ namespace ShoppingCart.GraphQL
             {
                 newItem.Price = price;
                 newItem.Stock = stock;
+                _context.Products.Add(newItem);
+                _context.SaveChanges();
             }
-            _context.Products.Add(newItem);
-            _context.SaveChanges();
             return newItem;
         }
 
-        [Authorize(Roles = new[] { "Admin" })]
-        public Product UpdateProduct(int id, string? name, double? price, int? stock )
+        //[Authorize(Roles = new[] { "Admin" })]
+        public Product UpdateProduct(int id, string? name, double? price, int? stock)
         {
+            //var product = _context.Products.FirstOrDefault(o => o.Id == id);
+            //if (product == null)
+            //{
+            //    throw new ArgumentException("Product not found");
+            //}
+
+            //product.Name = name ?? product.Name;
+            //product.Price = price ?? product.Price;
+            //product.Stock = stock ?? product.Stock;
+
+            //_context.Products.Update(product);
+            //_context.SaveChanges();
+
+            //return product;
             var product = _context.Products.FirstOrDefault(o => o.Id == id);
             if (product != null)
             {
@@ -205,7 +166,7 @@ namespace ShoppingCart.GraphQL
             return product;
         }
 
-        [Authorize(Roles = new[] { "Admin" })]
+        //[Authorize(Roles = new[] { "Admin" })]
         public Product DeleteProduct(int id)
         {
             var product = _context.Products.FirstOrDefault(o => o.Id == id);
@@ -217,5 +178,22 @@ namespace ShoppingCart.GraphQL
             }
             return product;
         }
+
+        // CRUD CART
+        //public CartItem AddToCart(int id, int quantity)
+        //{
+        //    CartItem newCart = new CartItem();
+        //    var product = _context.Products.FirstOrDefault(o => o.Id == id);
+        //    newCart.Id = product.Id;
+        //    if (newCart.Id != null)
+        //    {
+        //        newCart.Quantity = quantity;
+        //        product.Stock -= newCart.Quantity;
+        //        _context.CartItems.Add(newCart);
+        //        _context.Products.Update(product);
+        //        _context.SaveChanges();
+        //    }
+        //    return newCart;
+        //}
     }
 }

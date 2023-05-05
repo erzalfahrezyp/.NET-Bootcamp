@@ -12,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//builder.Services.AddHttpContextAccessor();
+
 // db
 var cnstr = builder.Configuration.GetConnectionString("MyDB");
 builder.Services.AddDbContext<ShoppingCartContext>(option => option.UseSqlServer(cnstr));
